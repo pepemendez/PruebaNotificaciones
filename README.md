@@ -1,4 +1,4 @@
-# PruebaNotificaciones
+# Prueba Notificaciones
 Prueba de notificaciones en background
 
 Aplicación de prueba para probar notificaciones en background y ejecutar una serie de recordatorios periodicos, en un intervalo dado, vía notificación local. Para la aplicación de ejemplo al recibir una notificación se emiten 5 notificaciones en un intervalo de 5 segundos entre cada notificación.
