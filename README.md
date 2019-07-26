@@ -1,7 +1,7 @@
 # PruebaNotificaciones
 Prueba de notificaciones en background
 
-Aplicación de prueba para probar notificaciones en background y ejecutar una serie de recordatorios via notificación local periodicos en un intervalo dado. Para la aplicación de ejemplo al recibir una notificación se emiten 5 notificaciones en un intervalo de 5 segundos entre cada notificación.
+Aplicación de prueba para probar notificaciones en background y ejecutar una serie de recordatorios periodicos, en un intervalo dado, vía notificación local. Para la aplicación de ejemplo al recibir una notificación se emiten 5 notificaciones en un intervalo de 5 segundos entre cada notificación.
 
 Al iniciar la aplicación en background y recibir una notificación push con la bandera content-avaliable la aplicación es capaz de ejecutar código durante 30 segundos hasta que el tiempo de background llegue a 0. Cuando el tiempo ha expirado la aplicación vuelve a despertar en modo background por 30 segundos más.
 
