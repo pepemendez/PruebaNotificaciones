@@ -3,9 +3,9 @@ Prueba de notificaciones en background
 
 Aplicación de prueba para probar notificaciones en background y ejecutar una serie de recordatorios periodicos, en un intervalo dado, vía notificación local. Para la aplicación de ejemplo al recibir una notificación se emiten 5 notificaciones en un intervalo de 5 segundos entre cada notificación.
 
-Al iniciar la aplicación en background y recibir una notificación push con la bandera content-avaliable la aplicación es capaz de ejecutar código durante 30 segundos hasta que el tiempo de background llegue a 0. Cuando el tiempo ha expirado la aplicación vuelve a despertar en modo background por 30 segundos más.
+Al iniciar la aplicación en background y recibir una notificación push con la bandera ``content-avaliable`` la aplicación es capaz de ejecutar código durante 30 segundos hasta que el tiempo de ejecución en background llegue a 0. Cuando el tiempo ha expirado y se recibe una nueva notificación la aplicación vuelve a despertar en modo background por 30 segundos más.
 
-Para el funcionamiento se realizaron pruebas con la aplicación Easy APNs Provider para realizar la implementación quizá sea necesario ver la documentación de apple sobre el cuerpo de los mensajes a enviar [(ver documentación de apple)](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/pushing_background_updates_to_your_app). En la siguiente imagen se muestran los parámetros de la notificación en la aplicación Easy APNs Provider y la depuración en consola:
+Para el funcionamiento se realizaron pruebas con la aplicación [Easy APNs Provider](https://apps.apple.com/us/app/easy-apns-provider-push-notification-service-testing-tool/id989622350?mt=12), para realizar la implementación en el servidor se recomienda ver la documentación de apple sobre el cuerpo de los mensajes de notificación a enviar [(ver documentación de apple)](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/pushing_background_updates_to_your_app). En la siguiente imagen se muestran los parámetros de la notificación en la aplicación Easy APNs Provider y los resultados en consola de la depuración de la aplicación:
 
 <!--
     Esta es otra manera de añadir una imagen, utilizamos html para centrar la imagen en el contenedor
