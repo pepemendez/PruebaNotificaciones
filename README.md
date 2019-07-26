@@ -35,7 +35,7 @@ En el dispositivo es necesario verificar que la actualización en 2o. plano est�
   <img src="imagenes/Captura_de_Pantalla_2019-07-26_1.34.58.png" width="250">
 </p>
 
-#Consideraciones especiales
+# Consideraciones especiales
 
 Desde la versión 11 de iOS las notificaciones tienen caracterísitcas importantes [(ver documentación apple)](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623013-application) y por tanto la aplicación sólo recibe notificaciones en background si la aplicación no ha sido cerrada forzosamente por el usuario (desde el springboard), es decir, las notificaciones sólo llegarán si el usuario abrió la aplicación y no hice force-quit o si el dispositivo ha sido reiniciado.
 
