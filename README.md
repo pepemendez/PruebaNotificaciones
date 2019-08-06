@@ -13,6 +13,12 @@ Se implementó el target Push Notification Service Extension, por lo cual ahora 
 }
 ```
 
+En la siguiente imagen se muestra el efecto del ``mutable-content:0`` (notificación inferior), ``mutable-content:1`` (notificación de enmedio), y la notificación superior es la notificación local que dispara el servicio extendido de notificaciones.
+
+<p align="center">
+  <img src="imagenes/IMG_0607.png" alt="Your image title" width="250"/>
+</p>
+
 # Prueba Notificaciones
 Prueba de notificaciones en background
 
