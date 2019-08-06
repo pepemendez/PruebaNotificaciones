@@ -54,40 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             print("Message ID: \(messageID)")
         }
         
-        // Print full message.
-        print("didReceiveRemoteNotification fetchCompletionHandler \(userInfo)")
-        
-        let content = UNMutableNotificationContent()
-        content.title = "Evento automonitoreo"
-        content.body = "Uno o más eventos necesitan atención"
-        content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: "events_sound.caf"))
-        
-        var date = Date()
-        
-        for _ in 0...5{
-            date = Calendar.current.date(byAdding: .second, value: 5, to: date)!
-            
-            let components = Calendar.current.dateComponents([.second, .minute, .hour, .day, .month, .year], from: date)
-            
-            // Create the trigger as a repeating event.
-            let trigger = UNCalendarNotificationTrigger(
-                dateMatching: components, repeats: false)
-            
-            // Create the request
-            let uuidString = UUID().uuidString
-            let request = UNNotificationRequest(identifier: uuidString,
-                                                content: content, trigger: trigger)
-            
-            // Schedule the request with the system.
-            let notificationCenter = UNUserNotificationCenter.current()
-            notificationCenter.add(request) { (error) in
-                if error != nil {
-                    // Handle any errors.
-                }
-            }
-        }
-
-
         completionHandler(UIBackgroundFetchResult.newData)
     }
     
@@ -159,7 +125,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
-
