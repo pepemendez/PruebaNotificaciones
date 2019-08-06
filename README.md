@@ -8,8 +8,8 @@ Se implementó el target Push Notification Service Extension, por lo cual ahora 
        "alert": "Notification",
        "mutable-content" : 1
    },
-   "times" : 1,
-   "timer" : 5
+   "times" : 1, //Variable necesaria en este proyecto de prueba, No. de notificaciones locales queremos mostrar
+   "timer" : 5  //Variable necesaria en este proyecto de prueba, intervalo en segundos entre notificaciones
 }
 ```
 
