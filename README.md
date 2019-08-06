@@ -1,3 +1,18 @@
+# Actualización 
+
+Se implementó el target Push Notification Service Extension, por lo cual ahora podemos mostrar las alertas aún si el app ha sido victima de un force-quit desde el Springboard. Para ello es necesario utilizar la bandera ``mutable-content``en el cuerpo del aps de la notificación push.
+
+``` swift
+{
+  "aps" : {
+       "alert": "Notification",
+       "mutable-content" : 1
+   },
+   "times" : 1,
+   "timer" : 5
+}
+```
+
 # Prueba Notificaciones
 Prueba de notificaciones en background
 
